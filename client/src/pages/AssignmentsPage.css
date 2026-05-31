@@ -1,0 +1,24 @@
+.assignment-row-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 18px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  box-shadow: var(--shadow);
+  transition: box-shadow 0.2s;
+}
+.assignment-row-card:hover { box-shadow: var(--shadow-md); }
+.assignment-row-card.past { opacity: 0.75; }
+.assignment-row-left { display: flex; gap: 14px; flex: 1; }
+.assignment-row-icon { font-size: 28px; margin-top: 2px; flex-shrink: 0; }
+.assignment-row-title { font-size: 16px; font-weight: 700; margin-bottom: 6px; }
+.assignment-row-meta { display: flex; flex-wrap: wrap; gap: 12px; font-size: 12px; color: var(--text-muted); }
+.assignment-row-right { flex-shrink: 0; min-width: 160px; }
+
+@media (max-width: 768px) {
+  .assignment-row-card { flex-direction: column; }
+  .assignment-row-right { width: 100%; }
+}

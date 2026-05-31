@@ -1,0 +1,14 @@
+.course-detail-hero { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 28px; margin-bottom: 24px; display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; box-shadow: var(--shadow); }
+.course-detail-meta { display: flex; flex-wrap: wrap; gap: 16px; font-size: 14px; color: var(--text-muted); }
+.course-detail-actions { display: flex; flex-direction: column; gap: 10px; align-items: flex-end; flex-shrink: 0; }
+.course-detail-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 24px; }
+
+.assignment-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; box-shadow: var(--shadow); transition: box-shadow 0.15s; }
+.assignment-card:hover { box-shadow: var(--shadow-md); }
+.assignment-card-title { font-size: 15px; font-weight: 700; margin-bottom: 4px; }
+.assignment-card-desc { font-size: 13px; color: var(--text-muted); }
+
+.student-row { display: flex; align-items: center; gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--border); }
+.student-row:last-child { border-bottom: none; }
+
+@media (max-width: 900px) { .course-detail-grid { grid-template-columns: 1fr; } .course-detail-hero { flex-direction: column; } }
